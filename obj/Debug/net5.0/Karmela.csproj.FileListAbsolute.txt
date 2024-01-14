@@ -228,3 +228,4 @@ C:\Users\Dalila\Desktop\VVS\Karmela\VVS-Karmela\obj\Debug\net5.0\refint\Karmela.
 C:\Users\Dalila\Desktop\VVS\Karmela\VVS-Karmela\obj\Debug\net5.0\Karmela.pdb
 C:\Users\Dalila\Desktop\VVS\Karmela\VVS-Karmela\obj\Debug\net5.0\Karmela.genruntimeconfig.cache
 C:\Users\Dalila\Desktop\VVS\Karmela\VVS-Karmela\obj\Debug\net5.0\ref\Karmela.dll
+C:\Users\Dalila\Desktop\VVS\Karmela\VVS-Karmela\obj\Debug\net5.0\Karmela.sourcelink.json

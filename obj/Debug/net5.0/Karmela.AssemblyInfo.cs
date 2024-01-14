@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Karmela")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68f45fd97b7a44edc53538921e3d5fae3946bb2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Karmela")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Karmela")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
