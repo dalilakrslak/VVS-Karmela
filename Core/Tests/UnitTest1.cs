@@ -53,6 +53,48 @@ namespace Karmela
             Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
         }
 
+        // Nejra - Test 1
+        [Test]
+        public void PregledDetaljiTest()
+        {
+            HomePage hp = new HomePage(_driver);
+            _driver.Navigate().GoToUrl("https://karmelarealestate.com/nekretnine/");
+
+            IWebElement detaljiButton = _driver.FindElement(By.CssSelector("#mh-property__17948>div.mh-estate-vertical__bottom>div>div.mh-estate-vertical__buttons-wrapper>div>div>a"));
+
+            detaljiButton.Click();
+
+            Thread.Sleep(3000);
+
+            string expectedUrl = "https://karmelarealestate.com/nekretnine/zemljiste/sarajevo/zemljiste-faletici-stari-grad-sarajevo/";
+
+            Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
+        }
+
+        // Nejra - Test 2
+        [Test]
+        public void LokacijaTest()
+        {
+            HomePage hp = new HomePage(_driver);
+            _driver.Navigate().GoToUrl("https://karmelarealestate.com/nekretnine/");
+
+            IWebElement detaljiButton = _driver.FindElement(By.CssSelector("#mh-property__17543>div.mh-estate-vertical__bottom>div>div.mh-estate-vertical__buttons-wrapper>div>div>a"));
+
+            detaljiButton.Click();
+
+            Thread.Sleep(3000);
+
+            IWebElement lokacijaButton = _driver.FindElement(By.CssSelector("#post-17543>div.mh-layout.position-relative.mh-attribute-vrsta-nekretnine__stan.mh-attribute-ponuda__prodaja.mh-attribute-grad__sarajevo.mh-attribute-zip-code__71000.mh-attribute-op--ina__novi-grad.mh-attribute-naselje__nova-otoka.mh-attribute-ulica__dzemala-bijedica.mh-attribute-sprat__12-13.mh-attribute-bedrooms__bedrooms.mh-attribute-bathrooms__bathrooms.mh-attribute-property-size__property-size.mh-attribute-grijanje__centralno-s-vlastitim-kalorimetrom-euroterm.mh-attribute-godina-izgradnje__2015>aside>div>div.position-relative>div>div.mh-estate__details__map>a"));
+
+            lokacijaButton.Click();
+
+            Thread.Sleep(3000);
+
+            string expectedUrl = "https://karmelarealestate.com/nekretnine/stan/sarajevo/penthouse-stan-sa-terasom-nova-otoka/";
+
+            Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
+        }
+
         [TearDown]
         public void Cleanup()
         {
