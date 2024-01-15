@@ -143,6 +143,60 @@ namespace Karmela
             Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
         }
 
+        //Vildana - Test 1
+        [Test]
+        public void FiltriranjeNaKlikTest()
+        {
+            HomePage hp = new HomePage(_driver);
+            _driver.Navigate().GoToUrl("https://karmelarealestate.com/nekretnine/");
+
+            IWebElement nekretninaButton = _driver.FindElement(By.CssSelector("#mh-property__17948>div.mh-estate-vertical__content>h3>a>span"));
+
+            nekretninaButton.Click();
+
+            Thread.Sleep(3000);
+
+            IWebElement filterButton = _driver.FindElement(By.CssSelector("#mh-estate_attribute--19>a"));
+
+            filterButton.Click();
+
+            Thread.Sleep(3000);
+
+            string expectedUrl = "https://karmelarealestate.com/op--ina/stari-grad/";
+
+            Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
+        }
+
+        //Vildana - Test 2
+        [Test]
+        public void ResetLozinkeTest()
+        {
+            HomePage hp = new HomePage(_driver);
+            _driver.Navigate().GoToUrl("https://karmelarealestate.com/nekretnine/");
+
+            IWebElement nekretninaButton = _driver.FindElement(By.CssSelector("#mh-property__17724>div.mh-estate-vertical__content>h3>a>span"));
+
+            nekretninaButton.Click();
+
+            Thread.Sleep(3000);
+
+            IWebElement likeButton = _driver.FindElement(By.CssSelector("#post-17724>div.mh-layout.position-relative.mh-attribute-vrsta-nekretnine__stan.mh-attribute-ponuda__prodaja.mh-attribute-grad__sarajevo.mh-attribute-zip-code__71000.mh-attribute-op--ina__novo-sarajevo.mh-attribute-naselje__cengic-vila.mh-attribute-ulica__dzemala-bijedica.mh-attribute-sprat__5.mh-attribute-bedrooms__bedrooms.mh-attribute-bathrooms__bathrooms.mh-attribute-property-size__property-size.mh-attribute-grijanje__centralno-gradsko>aside>div>div.mh-estate__add-to>button"));
+
+            likeButton.Click();
+
+            Thread.Sleep(3000);
+
+            IWebElement resetButton = _driver.FindElement(By.CssSelector("#myhome-account__inner>div>div>div>button"));
+
+            resetButton.Click();
+
+            Thread.Sleep(3000);
+
+            string expectedUrl = "https://karmelarealestate.com/nekretnine/stan/sarajevo/stan-na-cengic-vili-trosoban/";
+
+            Assert.That(_driver.Url, Is.EqualTo(expectedUrl));
+        }
+
         [TearDown]
         public void Cleanup()
         {
