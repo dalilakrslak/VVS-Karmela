@@ -1893,19 +1893,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abdel Adilovic\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abdel Adilovic\\Desktop\\VVS\\VVS-Karmela\\Karmela.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\VVS-Karmela\\Karmela.csproj",
       "projectName": "Karmela",
-      "projectPath": "C:\\Users\\Abdel Adilovic\\Desktop\\VVS\\VVS-Karmela\\Karmela.csproj",
-      "packagesPath": "C:\\Users\\Abdel Adilovic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abdel Adilovic\\Desktop\\VVS\\VVS-Karmela\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\VVS-Karmela\\Karmela.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\VVS-Karmela\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Abdel Adilovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
